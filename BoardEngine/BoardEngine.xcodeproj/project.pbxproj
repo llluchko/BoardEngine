@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69FEC35B1ED5D39D0050D3B8 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3521ED5D39D0050D3B8 /* Board.swift */; };
+		69FEC35C1ED5D39D0050D3B8 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3541ED5D39D0050D3B8 /* Element.swift */; };
+		69FEC35D1ED5D39D0050D3B8 /* GameCongif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3551ED5D39D0050D3B8 /* GameCongif.swift */; };
+		69FEC35E1ED5D39D0050D3B8 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3561ED5D39D0050D3B8 /* GameData.swift */; };
+		69FEC35F1ED5D39D0050D3B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3571ED5D39D0050D3B8 /* main.swift */; };
+		69FEC3601ED5D39D0050D3B8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3581ED5D39D0050D3B8 /* Parser.swift */; };
+		69FEC3611ED5D39D0050D3B8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3591ED5D39D0050D3B8 /* Player.swift */; };
+		69FEC3621ED5D39D0050D3B8 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC35A1ED5D39D0050D3B8 /* Position.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		69FEC3461ED5D37D0050D3B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		69FEC3481ED5D37D0050D3B8 /* BoardEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BoardEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FEC3521ED5D39D0050D3B8 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		69FEC3541ED5D39D0050D3B8 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		69FEC3551ED5D39D0050D3B8 /* GameCongif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCongif.swift; sourceTree = "<group>"; };
+		69FEC3561ED5D39D0050D3B8 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		69FEC3571ED5D39D0050D3B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		69FEC3581ED5D39D0050D3B8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		69FEC3591ED5D39D0050D3B8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		69FEC35A1ED5D39D0050D3B8 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		69FEC3641ED5D6B30050D3B8 /* config.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69FEC3451ED5D37D0050D3B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69FEC33F1ED5D37D0050D3B8 = {
+			isa = PBXGroup;
+			children = (
+				69FEC34A1ED5D37D0050D3B8 /* BoardEngine */,
+				69FEC3491ED5D37D0050D3B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69FEC3491ED5D37D0050D3B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69FEC3481ED5D37D0050D3B8 /* BoardEngine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69FEC34A1ED5D37D0050D3B8 /* BoardEngine */ = {
+			isa = PBXGroup;
+			children = (
+				69FEC3521ED5D39D0050D3B8 /* Board.swift */,
+				69FEC3541ED5D39D0050D3B8 /* Element.swift */,
+				69FEC35A1ED5D39D0050D3B8 /* Position.swift */,
+				69FEC3591ED5D39D0050D3B8 /* Player.swift */,
+				69FEC3551ED5D39D0050D3B8 /* GameCongif.swift */,
+				69FEC3561ED5D39D0050D3B8 /* GameData.swift */,
+				69FEC3581ED5D39D0050D3B8 /* Parser.swift */,
+				69FEC3571ED5D39D0050D3B8 /* main.swift */,
+				69FEC3641ED5D6B30050D3B8 /* config.txt */,
+			);
+			path = BoardEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69FEC3471ED5D37D0050D3B8 /* BoardEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69FEC34F1ED5D37D0050D3B8 /* Build configuration list for PBXNativeTarget "BoardEngine" */;
+			buildPhases = (
+				69FEC3441ED5D37D0050D3B8 /* Sources */,
+				69FEC3451ED5D37D0050D3B8 /* Frameworks */,
+				69FEC3461ED5D37D0050D3B8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoardEngine;
+			productName = BoardEngine;
+			productReference = 69FEC3481ED5D37D0050D3B8 /* BoardEngine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69FEC3401ED5D37D0050D3B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Latchezar Mladenov";
+				TargetAttributes = {
+					69FEC3471ED5D37D0050D3B8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4D5PLR5969;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 69FEC3431ED5D37D0050D3B8 /* Build configuration list for PBXProject "BoardEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 69FEC33F1ED5D37D0050D3B8;
+			productRefGroup = 69FEC3491ED5D37D0050D3B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69FEC3471ED5D37D0050D3B8 /* BoardEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69FEC3441ED5D37D0050D3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69FEC35C1ED5D39D0050D3B8 /* Element.swift in Sources */,
+				69FEC35F1ED5D39D0050D3B8 /* main.swift in Sources */,
+				69FEC3601ED5D39D0050D3B8 /* Parser.swift in Sources */,
+				69FEC35E1ED5D39D0050D3B8 /* GameData.swift in Sources */,
+				69FEC3611ED5D39D0050D3B8 /* Player.swift in Sources */,
+				69FEC35B1ED5D39D0050D3B8 /* Board.swift in Sources */,
+				69FEC3621ED5D39D0050D3B8 /* Position.swift in Sources */,
+				69FEC35D1ED5D39D0050D3B8 /* GameCongif.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		69FEC34D1ED5D37D0050D3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69FEC34E1ED5D37D0050D3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		69FEC3501ED5D37D0050D3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4D5PLR5969;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		69FEC3511ED5D37D0050D3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4D5PLR5969;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69FEC3431ED5D37D0050D3B8 /* Build configuration list for PBXProject "BoardEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FEC34D1ED5D37D0050D3B8 /* Debug */,
+				69FEC34E1ED5D37D0050D3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69FEC34F1ED5D37D0050D3B8 /* Build configuration list for PBXNativeTarget "BoardEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FEC3501ED5D37D0050D3B8 /* Debug */,
+				69FEC3511ED5D37D0050D3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69FEC3401ED5D37D0050D3B8 /* Project object */;
+}
