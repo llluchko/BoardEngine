@@ -9,10 +9,8 @@
 import Foundation
 
 class Parser {
-	
 	static func parseGameConfiguration(path: String) -> GameConfig? {
 		var gameConfig = GameConfig()
-		
 		let config = Parser.getEncodedFileContent(filename: path)!
 		var configLines = Parser.getLines(file: config)
 		configLines = Parser.removeLines(lines: configLines)
@@ -45,7 +43,7 @@ class Parser {
 			bonuses.append((rowCol, type, multiplyBy))
 		}
 		
-		var elements: [(Element, Int)] = [(Element, Int)]()
+		var elements: [(Element<T>, Int)] = [(Element<T>, Int)]()
 		
 		for line in configLines[lettersStartIndex + 1 ... configLines.count - 1] {
 			let line = line.components(separatedBy: " ")
@@ -53,14 +51,14 @@ class Parser {
 				print("Line components cannot be < 3.")
 				return nil
 			}
-			let letter = Character(line[0])
+			let letter = T(line[0])
 			guard let occurences = Int(line[1]),
 				let points = Int(line[2])
 				else {
 					print("Wrong input data.")
 					return nil
 			}
-			let currentElement = Element(letter: letter, score: points)
+			let currentElement = Element(substance: letter, score: points)
 			elements.append((currentElement, occurences))
 		}
 		
@@ -69,6 +67,73 @@ class Parser {
 		gameConfig.bonuses = bonuses
 		
 		return gameConfig
+	}
+	
+	static func parseGameData(path: String) -> GameData? {
+		var gameData = GameData()
+		
+		let savedGame = Parser.getEncodedFileContent(filename: path)!
+		var lines = Parser.getLines(file: savedGame)
+		lines = Parser.removeLines(lines: lines)
+		
+		let playersStartIndex = lines.index(of: "--PLAYERS--")!
+		let turnsStartIndex = lines.index(of: "--TURNS--")!
+		
+		var players: [Player] = [Player]()
+		for name in lines[playersStartIndex+1...turnsStartIndex-1] {
+			let currentPlayer = Player(name: name)
+			players.append(currentPlayer)
+		}
+		
+		var turns: [(player: Player, startPosition: (Int, Int), direction: Direction, word: String)] =
+			[(Player, (Int, Int), Direction, String)]()
+		
+		for l in lines[turnsStartIndex+1...lines.count-1] {
+			var line = l.components(separatedBy: " ")
+			if line.count < 5 {
+				print("Line components cannot be < 5.")
+				return nil
+			}
+			
+			let player = Player(name: line[0])
+			guard let row = Int(line[1]),
+				let col = Int(line[2])
+				else {
+					return nil
+			}
+			var wordStartDirection: Direction
+			switch line[3] {
+			case "H":
+				wordStartDirection = .horizontal
+			case "V":
+				wordStartDirection = .vertical
+			default: return nil
+			}
+			let playerWord = line[4]
+			turns.append((player, (row, col), wordStartDirection, playerWord))
+		}
+		
+		gameData.players = players
+		gameData.turns = turns
+		
+		return gameData
+	}
+	
+	static func writeToFile(content: String, filePath: String) {
+		let contentToAppend = content + "\n"
+		
+		if let fileHandle = FileHandle(forWritingAtPath: filePath) {
+			let data = contentToAppend.data(using: String.Encoding.utf8)
+			fileHandle.seekToEndOfFile()
+			fileHandle.write(data!)
+		}
+		else {
+			do {
+				try contentToAppend.write(toFile: filePath, atomically: false, encoding: String.Encoding.utf8)
+			} catch {
+				print("Error creating \(filePath)")
+			}
+		}
 	}
 	
 	static func getEncodedFileContent(filename: String) -> String? {
@@ -91,5 +156,14 @@ class Parser {
 	
 	static func removeLines(lines: [String]) -> [String] {
 		return lines.filter { $0.isEmpty == false }.filter { $0[$0.startIndex] != "#" }
+	}
+	
+	static func getLetterScore(_ elements : [(Element<T>, Int)], _ letter: T) -> Int {
+		for item in elements {
+			if item.0.substance == letter {
+				return item.0.score
+			}
+		}
+		return 1
 	}
 }

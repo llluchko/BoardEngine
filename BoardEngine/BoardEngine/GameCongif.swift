@@ -10,6 +10,6 @@ import Foundation
 
 struct GameConfig {
 	var dimensions: (rows: Int, cols: Int) = (rows: 0, cols: 0)
-	var elements: [(Element, Int)] = [(Element, Int)]()
+	var elements: [(Element<T>, Int)] = [(Element<T>, Int)]()
 	var bonuses: [(coordinates: (Int, Int), type: String, multiplier: Int)] = [((Int, Int), String, Int)]()
 }

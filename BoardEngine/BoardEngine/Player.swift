@@ -23,6 +23,6 @@ class Player {
 
 extension Player: CustomStringConvertible {
 	var description: String {
-		return "\(name)->\(score)"
+		return "\(name)"
 	}
 }

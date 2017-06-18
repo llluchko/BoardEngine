@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69118D921EF6B5EC0089BDAA /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69118D911EF6B5EC0089BDAA /* Position.swift */; };
 		69FEC35B1ED5D39D0050D3B8 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3521ED5D39D0050D3B8 /* Board.swift */; };
 		69FEC35C1ED5D39D0050D3B8 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3541ED5D39D0050D3B8 /* Element.swift */; };
 		69FEC35D1ED5D39D0050D3B8 /* GameCongif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3551ED5D39D0050D3B8 /* GameCongif.swift */; };
@@ -14,7 +15,7 @@
 		69FEC35F1ED5D39D0050D3B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3571ED5D39D0050D3B8 /* main.swift */; };
 		69FEC3601ED5D39D0050D3B8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3581ED5D39D0050D3B8 /* Parser.swift */; };
 		69FEC3611ED5D39D0050D3B8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC3591ED5D39D0050D3B8 /* Player.swift */; };
-		69FEC3621ED5D39D0050D3B8 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC35A1ED5D39D0050D3B8 /* Position.swift */; };
+		69FEC3621ED5D39D0050D3B8 /* ScrablePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FEC35A1ED5D39D0050D3B8 /* ScrablePosition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		69118D911EF6B5EC0089BDAA /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		69FEC3481ED5D37D0050D3B8 /* BoardEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BoardEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FEC3521ED5D39D0050D3B8 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		69FEC3541ED5D39D0050D3B8 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
@@ -38,8 +40,7 @@
 		69FEC3571ED5D39D0050D3B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		69FEC3581ED5D39D0050D3B8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		69FEC3591ED5D39D0050D3B8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		69FEC35A1ED5D39D0050D3B8 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
-		69FEC3641ED5D6B30050D3B8 /* config.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.txt; sourceTree = "<group>"; };
+		69FEC35A1ED5D39D0050D3B8 /* ScrablePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrablePosition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +73,15 @@
 		69FEC34A1ED5D37D0050D3B8 /* BoardEngine */ = {
 			isa = PBXGroup;
 			children = (
-				69FEC3521ED5D39D0050D3B8 /* Board.swift */,
 				69FEC3541ED5D39D0050D3B8 /* Element.swift */,
-				69FEC35A1ED5D39D0050D3B8 /* Position.swift */,
+				69118D911EF6B5EC0089BDAA /* Position.swift */,
+				69FEC35A1ED5D39D0050D3B8 /* ScrablePosition.swift */,
 				69FEC3591ED5D39D0050D3B8 /* Player.swift */,
+				69FEC3521ED5D39D0050D3B8 /* Board.swift */,
 				69FEC3551ED5D39D0050D3B8 /* GameCongif.swift */,
 				69FEC3561ED5D39D0050D3B8 /* GameData.swift */,
 				69FEC3581ED5D39D0050D3B8 /* Parser.swift */,
 				69FEC3571ED5D39D0050D3B8 /* main.swift */,
-				69FEC3641ED5D6B30050D3B8 /* config.txt */,
 			);
 			path = BoardEngine;
 			sourceTree = "<group>";
@@ -151,8 +152,9 @@
 				69FEC35E1ED5D39D0050D3B8 /* GameData.swift in Sources */,
 				69FEC3611ED5D39D0050D3B8 /* Player.swift in Sources */,
 				69FEC35B1ED5D39D0050D3B8 /* Board.swift in Sources */,
-				69FEC3621ED5D39D0050D3B8 /* Position.swift in Sources */,
+				69FEC3621ED5D39D0050D3B8 /* ScrablePosition.swift in Sources */,
 				69FEC35D1ED5D39D0050D3B8 /* GameCongif.swift in Sources */,
+				69118D921EF6B5EC0089BDAA /* Position.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +293,7 @@
 				69FEC3511ED5D37D0050D3B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

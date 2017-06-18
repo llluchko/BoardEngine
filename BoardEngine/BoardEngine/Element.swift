@@ -8,18 +8,18 @@
 
 import Foundation
 
-class Element {
-	let letter: Character
+class Element<T: Equatable> {
+	let substance: T
 	let score: Int
-	
-	init(letter: Character, score: Int) {
-		self.letter = letter
+
+	init(substance: T, score: Int) {
+		self.substance = substance
 		self.score = score
 	}
 }
 
 extension Element: CustomStringConvertible {
 	var description: String {
-		return "\(letter)->\(score)"
+		return "\(substance)->\(score)"
 	}
 }
